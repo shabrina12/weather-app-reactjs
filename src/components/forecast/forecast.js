@@ -10,18 +10,18 @@ const Forecast = ({dataForecast}) => {
 
   return (
     <div className='forecast-container'>
-        <label className='title'>Daily</label>
-        <Accordion allowZeroExpanded>
+        <label className='title'>Next 7 days</label>
+        <Accordion allowZeroExpanded className='panel'>
             {dataForecast.list.splice(0, 7).map((item, index) => (
-                <AccordionItem key={index}>
+                <AccordionItem key={index} className='panel-item'>
                     <AccordionItemHeading>
                         <AccordionItemButton>
                             <div className='daily-item'>
-                                <div className='left'>
-                                    <img src={`icons/${item.weather[0].icon}.png`} alt='icon-weather' />
+                                <div className='top'>
                                     <label>{forecastDays[index]}</label>
+                                    <img src={`icons/${item.weather[0].icon}.png`} alt='icon-weather' />
                                 </div>
-                                <div className='right'>
+                                <div className='bottom'>
                                     <label>{item.weather[0].description}</label>
                                     <label className='item-temp'>{Math.round(item.main.temp_min)}°C / {Math.round(item.main.temp_max)}°C</label>
                                 </div>

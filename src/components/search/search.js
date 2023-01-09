@@ -26,20 +26,13 @@ const Search = ({ onSearchChange }) => {
     onSearchChange(searchData);
   }
 
-  return ( <
-    AsyncPaginate placeholder = "search for city"
-    debounceTimeout = {
-      600
-    }
-    value = {
-      search
-    }
-    onChange = {
-      handleOnChange
-    }
-    loadOptions = {
-      loadOptions
-    }
+  return ( <AsyncPaginate 
+    placeholder = "search for city"
+    debounceTimeout = { 600 }
+    value = { search }
+    onChange = { handleOnChange }
+    loadOptions = { loadOptions }
+    className='search-bar'
     />
   )
 }
