@@ -12,3 +12,16 @@ body {
 .search-bar {
   margin: 2rem 8rem;
 }
+
+
+@media screen and (max-width: 1250px) {
+  .search-bar {
+    margin: 2rem 4rem;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .search-bar {
+    margin: 2rem;
+  }
+}

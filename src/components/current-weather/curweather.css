@@ -2,11 +2,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
     margin: 2rem 8rem;
     height: 300px;
     border-radius: 10px;
     background-color: transparent;
-    padding-bottom: 2rem;
+    padding: 0 1rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .left, .center, .right {
@@ -48,4 +49,29 @@
 }
 .parameter-value {
     font-weight: 600;
+}
+
+@media screen and (max-width: 1250px) {
+    .weather-container {
+        margin: 2rem 4rem;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .weather-container {
+        flex-direction: column;
+        margin: 2rem;
+        height: 100%;
+        padding: 2rem;
+    }
+    .left, .center, .right {
+        width: 100%; 
+    }
+    .weather-icon, .parameter-row {
+        width: 100%;
+        height: auto;
+    }
+    .parameter-label, .parameter-value {
+        font-size: 1.3rem;
+    }
 }

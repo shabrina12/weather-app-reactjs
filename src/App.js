@@ -26,7 +26,7 @@ function App() {
   }
   
   return (
-    <div className="App">
+    <div>
      <Search onSearchChange={handleOnSearchChange} />
      {currentWeather && <CurrentWeather data={currentWeather} />}
      { forecast && <Forecast dataForecast={forecast} />}

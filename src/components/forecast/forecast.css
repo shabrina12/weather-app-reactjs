@@ -54,3 +54,39 @@
 .daily-details-item span:first-child {
     opacity: 0.7;
 }
+
+@media screen and (max-width: 1250px) {
+    .forecast-container {
+        margin: 2rem 4rem;
+    }
+    .panel {
+        grid-template-columns: repeat(5, 1fr);
+    }   
+}
+
+@media screen and (max-width: 1000px) {
+    .panel {
+        grid-template-columns: repeat(4, 1fr);
+    }   
+}
+
+@media screen and (max-width: 780px) {
+    .forecast-container {
+        margin: 2rem;
+    }
+    .panel {
+        grid-template-columns: repeat(3, 1fr);
+    }   
+}
+
+@media screen and (max-width: 600px) {
+    .panel {
+        grid-template-columns: repeat(2, 1fr);
+    }   
+}
+
+@media screen and (max-width: 440px) {
+    .panel {
+        grid-template-columns: repeat(1, 1fr);
+    }   
+}
