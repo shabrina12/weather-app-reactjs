@@ -18,7 +18,7 @@ This project is a weather app built with React JS framework. I created this proj
 
 ### The challenge
 
-- Build out the project to the designs provided
+- Make API calls from GeoDB API and OpenWeather API
 
 ### Screenshot
 ![Design overview for weather app](./public/overview.png)
