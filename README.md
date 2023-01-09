@@ -1,4 +1,4 @@
-# Weather App using React JS
+# Responsive Weather App using React JS
 This project is a weather app built with React JS framework. I created this project as an exercise to learn how to make API calls in react application.
 
 ## Table of contents
@@ -24,7 +24,7 @@ This project is a weather app built with React JS framework. I created this proj
 ![Design overview for weather app](./public/overview.png)
 
 ### Links
-- [Live Site URL](https://weather-app-reactjs-three.vercel.app/)
+- [Live Site URL](https://weather-app-reactjs-ten.vercel.app/)
 
 ## My process
 
